@@ -6,6 +6,7 @@ public class Q1 {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the size= ");
         n=sc.nextInt();
+        sc.close();
         for(int i=1;i<=n;i++)
         {
             sum+=i;
