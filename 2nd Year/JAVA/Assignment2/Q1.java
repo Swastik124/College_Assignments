@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Q1 {
     public static void main(String[] args) {
         int arr[]=new int[5];
-        int x,count;
+        int x,count=0;
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the values into array: ");
         for(int i=0;i<arr.length;i++)
@@ -13,7 +13,7 @@ public class Q1 {
         x=sc.nextInt();
         for(int i=0;i<5;i++)
         {
-          if(a[i]==x)
+          if(arr[i]==x)
           {
             System.out.println("Element found at index= "+i);
           }
@@ -21,7 +21,7 @@ public class Q1 {
             count++;
           }
         }
-       if(count==4)
+       if(count==5)
        {
          System.out.println("Element not found");
        }
