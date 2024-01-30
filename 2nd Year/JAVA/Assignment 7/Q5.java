@@ -1,34 +1,28 @@
 import java.util.Scanner;
-class SILICON{
-    void Calculator()
-    {
-        try{
-            Scanner sc = new Scanner(System.in);
-            int x,y,z=0;
-            System.out.println("Enter the first number:");
-            x=sc.nextInt();
-            System.out.println("Enter the second number:");
-            y=sc.nextInt();
-            System.out.println("Division of both ="+(x/y));
-            try{
-                System.out.println("Division= "+(x/z));
-            }
-            catch(ArithmeticException e)
-            {
-                System.out.println(e.getMessage());
-            }
-            sc.close();
-        }
-        catch(ArithmeticException q){
-            System.out.println("Error! Division by zero is not allowed.");
-        }
-        
-       
-    }
-}
-public class Q5{
+
+public class Q5 {
+
     public static void main(String[] args) {
-        SILICON obj=new SILICON();
-        obj.Calculator();
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the value of x: ");
+        int x = scanner.nextInt();
+
+        System.out.println("Enter the value of y: ");
+        int y = scanner.nextInt();
+
+        try {
+            int result = calculateDivision(x, y);
+            System.out.println("The result of x/(x-y) is: " + result);
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public static int calculateDivision(int x, int y) {
+        if ((x-y) == 0) {
+            throw new IllegalArgumentException("x - y must not be zero.");
+        }
+        return x / (x - y);
     }
 }
