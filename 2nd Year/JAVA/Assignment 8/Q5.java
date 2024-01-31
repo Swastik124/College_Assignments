@@ -14,6 +14,7 @@ class MyThread implements Runnable{
 }
 public class Q5 {
     public static void main(String[] args) {
+        
         MyThread mt;
         Scanner s=new Scanner(System.in);
         Thread t1=new Thread(new MyThread(1,"Mahesh"));
