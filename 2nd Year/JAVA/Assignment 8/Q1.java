@@ -4,6 +4,7 @@ class child extends Thread{
     int a,b;
     child(int m,int n)
     {
+        
         this.a=m;
         this.b=n;
     }
