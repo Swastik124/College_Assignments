@@ -11,7 +11,6 @@ class Person {
         System.out.println("Hello, my name is " + this.name + " and I am " + this.age + " years old.");
     }
 }
-
 class Student extends Person {
     String major;
 
