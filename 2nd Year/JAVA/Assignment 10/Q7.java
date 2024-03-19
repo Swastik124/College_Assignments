@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 
+
 public class Q7 {
     public static void main(String[] args) {
         ArrayList<String> list = new ArrayList<>();
